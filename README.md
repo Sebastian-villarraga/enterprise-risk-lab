@@ -2,7 +2,7 @@
 
 Small risk-control system: a React SPA authenticates a person with Auth0 and calls a Spring Boot OAuth 2.0 resource server using a bearer access token. The API only accepts JWTs for the configured issuer and audience.
 
-**Deployment URL:** not deployed yet. Set this to `https://YOUR-SUBDOMAIN.duckdns.org` once Duck DNS, Apache and Let's Encrypt are configured.
+**Deployment URL:** https://enterprise-risk-sebastian.duckdns.org
 
 ## Local setup
 
@@ -41,7 +41,7 @@ Build the artifacts with `mvn clean package` and `npm run build` from `frontend/
 - `enterprise-risk-api.service` runs the JAR as the dedicated `riskapi` user.
 - `enterprise-risk.conf` serves the SPA and proxies only `/api/` to `127.0.0.1:8080`.
 
-Replace the `YOUR_*` placeholders before installing them. Configure Auth0 callback, logout and web origins with the same HTTPS Duck DNS URL. Enable Apache modules `ssl proxy proxy_http rewrite headers`, then obtain and verify the certificate:
+Configure Auth0 callback, logout and web origins with `https://enterprise-risk-sebastian.duckdns.org`. Enable Apache modules `ssl proxy proxy_http rewrite headers`, then obtain and verify the certificate:
 
 ```bash
 sudo certbot --apache -d YOUR-SUBDOMAIN.duckdns.org
