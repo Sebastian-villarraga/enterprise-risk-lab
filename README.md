@@ -53,3 +53,15 @@ Do not expose port 8080 publicly. Allow only ports 80 and 443 at the host or clo
 ## Evidence to submit after deployment
 
 Capture (1) the authenticated API result in the browser and (2) the browser certificate details or successful `certbot renew --dry-run` output. These cannot be produced until an Auth0 tenant and a public Duck DNS host are supplied.
+
+<img width="1350" height="562" alt="image" src="https://github.com/user-attachments/assets/4d956741-0033-4f86-a621-c24f8a7e648e" />
+
+<img width="1339" height="680" alt="image" src="https://github.com/user-attachments/assets/0f9a90c0-d3a0-4c7a-a2f5-8dc186a855d5" />
+
+<img width="1362" height="625" alt="image" src="https://github.com/user-attachments/assets/8f81447c-a255-4f12-b6ea-9bf173750433" />
+
+<img width="1358" height="595" alt="image" src="https://github.com/user-attachments/assets/da5d1916-38a6-483e-a05b-c87868eceebd" />
+
+
+
+
